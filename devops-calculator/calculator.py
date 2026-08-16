@@ -16,6 +16,11 @@ def divide(a, b):
 def power(base, exponent):
     """Calculate base raised to the power of exponent"""
     return base ** exponent
+def square_root(num):
+    """Calculate square root of a number"""
+    if num < 0:
+        return "Error: Cannot calculate square root of negative number"
+    return num ** 0.5
 # Main program
 if __name__ == "__main__":
     print("Welcome to Advanced  DevOps Calculator!")
@@ -25,7 +30,9 @@ if __name__ == "__main__":
     print("3. Multiply")
     print("4. Divide")
     print("5. Power")
-    
+    print("5. Power")
+    print("6. Square Root")
+
     choice = input("Enter choice (1/2/3/4): ")
     num1 = float(input("Enter first number: "))
     num2 = float(input("Enter second number: "))
@@ -40,6 +47,10 @@ if __name__ == "__main__":
         print(f"Result: {divide(num1, num2)}")
     elif choice == '5':
         print(f"Result: {power(num1, num2)}")
+    elif choice == '5':
+        print(f"Result: {power(num1, num2)}")
+    elif choice == '6':
+        print(f"Result: {square_root(num1)}")
     else:
         print("Invalid input")
 def power(base, exponent):
