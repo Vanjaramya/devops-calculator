@@ -13,7 +13,9 @@ def divide(a, b):
     if b == 0:
         return "Error: Division by zero!"
     return a / b
-
+def power(base, exponent):
+    """Calculate base raised to the power of exponent"""
+    return base ** exponent
 # Main program
 if __name__ == "__main__":
     print("Welcome to DevOps Calculator!")
@@ -22,6 +24,7 @@ if __name__ == "__main__":
     print("2. Subtract")
     print("3. Multiply")
     print("4. Divide")
+    print("5. Power")
     
     choice = input("Enter choice (1/2/3/4): ")
     num1 = float(input("Enter first number: "))
@@ -32,8 +35,13 @@ if __name__ == "__main__":
     elif choice == '2':
         print(f"Result: {subtract(num1, num2)}")
     elif choice == '3':
-print(f"Result: {multiply(num1, num2)}")
+        print(f"Result: {multiply(num1, num2)}")
     elif choice == '4':
         print(f"Result: {divide(num1, num2)}")
+    elif choice == '5':
+        print(f"Result: {power(num1, num2)}")
     else:
         print("Invalid input")
+def power(base, exponent):
+    """Calculate base raised to the power of exponent"""
+    return base ** exponent
